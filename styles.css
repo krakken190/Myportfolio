@@ -13,7 +13,7 @@ body {
 
 .sidebar {
     width: 25%;
-    background: #28443f;
+    background: #FF7F50;
     padding: 10px;
     display: flex;
     flex-direction: column;
@@ -118,7 +118,7 @@ body {
 .content {
     width: 85%;
     padding: 20px;
-    background-color: #28443f; /* Or your chosen color */
+    background-color: #008080; /* Or your chosen color */
     overflow: auto; /* Handles both vertical and horizontal overflow */
     max-height: 500vh; /* Optional: Set a maximum height */
 }
@@ -201,15 +201,15 @@ body {
 }
 
 .project-card p {
-    font-size: 14px;
-    color: #b0b0b0;
+    font-size: 15px;
+    color: #ffffff;
 }
 
 .project-card a {
     display: inline-block;
     margin-top: 15px;
     padding: 8px 15px;
-    background: #1fdf64;
+    background: #FF7F50;
     color: black;
     font-weight: bold;
     text-decoration: none;
