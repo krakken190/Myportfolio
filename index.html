@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Prajwal Dongre</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <h2>Prajwal Dongre</h2>
+            <ul>
+                <li class="active" onclick="showSection('about')">ABOUT</li>
+                <li onclick="showSection('skills')">SKILLS</li>
+                <li onclick="showSection('projects')">PROJECTS</li>
+                <li onclick="showSection('work')">WORK EXPERIENCE</li>
+                <li onclick="showSection('education')">EDUCATION</li>
+            </ul>
+
+            <div class="downbar">
+                <a href="./doc/PrajwalDongreCV.pdf" download>DOWNLOAD CV</a>
+            </div>
+
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/prajwal-dongre-/" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i></a>
+                <a href="https://github.com/krakken190" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.kaggle.com/prajwaldongre" target="_blank"><i class="fa-brands fa-kaggle"></i></a>
+            </div>
+        </div>
+
+        <div class="content">
+            <div id="about" class="section active">
+                <p>I am a <b>Data Scientist and Analyst</b> with over <b>one year</b> of experience in the field. I
+                    possess a proven
+                    track record of extracting actionable insights from diverse datasets, contributing to the
+                    development and implementation of numerous AI applications and projects. I am adept at <b>leveraging
+                        analytical and statistical methodologies</b> to address complex business challenges. I thrive in
+                    collaborative environments, actively participating in brainstorming sessions to generate innovative
+                    solutions. My approach to problem-solving is characterized by a proactive and <b>results-oriented
+                        mindset.</b> I am eager to continue expanding my expertise in advanced analytics, machine
+                    learning
+                    algorithms, and big data technologies. My long-term objective is to assume leadership positions
+                    where I can strategically guide <b>data-driven initiatives</b> and contribute to <b>organizational
+                        success.</b>
+                </p>
+                <div class="images">
+                    <img src="images/img1.png" alt="Placeholder Image">
+                    <img src="images/img2.png" alt="Placeholder Image">
+                    <img src="images/img3.png" alt="Placeholder Image">
+                    <img src="images/img4.png" alt="Placeholder Image">
+                </div>
+            </div>
+
+            <div id="skills" class="section">
+                <div class="skills-section">
+                    <div class="skills-category">
+                        <h3>LANGUAGES</h3>
+                        <div class="skill-boxes">
+                            <div class="skill-box">Python</div>
+                            <div class="skill-box">SQL</div>
+                            <div class="skill-box">GO</div>
+                            <div class="skill-box">Scala</div>
+                            <div class="skill-box">Spark</div>
+                        </div>
+                    </div>
+
+                    <div class="skills-category">
+                        <h3>TOOLS</h3>
+                        <div class="skill-boxes">
+                            <div class="skill-box">Jupyter</div>
+                            <div class="skill-box">AWS</div>
+                            <div class="skill-box">VS Code</div>
+                            <div class="skill-box">Tableau</div>
+                            <div class="skill-box">Power BI</div>
+                            <div class="skill-box">Airflow</div>
+                        </div>
+                    </div>
+
+                    <div class="skills-category">
+                        <h3>LIBRARIES</h3>
+                        <div class="skill-boxes">
+                            <div class="skill-box">Matplotlib</div>
+                            <div class="skill-box">Seaborn</div>
+                            <div class="skill-box">Scikit-Learn</div>
+                            <div class="skill-box">Tensorflow</div>
+                            <div class="skill-box">Django</div>
+                            <div class="skill-box">Keras</div>
+                            <div class="skill-box">NLP</div>
+                            <div class="skill-box">Numpy</div>
+                            <div class="skill-box">Pandas</div>
+                            <div class="skill-box">PyTorch</div>
+                            <div class="skill-box">Hugging Face</div>
+                        </div>
+                    </div>
+
+                    <div class="skills-category">
+                        <h3>SOFT SKILLS</h3>
+                        <div class="skill-boxes">
+                            <div class="skill-box">Communication</div>
+                            <div class="skill-box">Problem-Solving</div>
+                            <div class="skill-box">Critical Thinking</div>
+                            <div class="skill-box">Storytelling</div>
+                            <div class="skill-box">Adaptability</div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="projects" class="section">
+                <div class="projects-grid">
+                    <div class="project-card"
+                    onclick="openProject('https://github.com/krakken190/Conversational-Survey-Generation-with-LLMs')">
+                    <img src="images/convo.jfif"
+                        alt="Conversational Survey questions generation">
+                    <h3>Conversational Survey Questions Generation using AI</h3>
+                    <p>The purpose of this conversational survey is to collect user feedback to improve e-commerce
+                        websites. The survey is designed to engage users in a dynamic conversation with an AI
+                        language model (LLM).</p>
+                    <a href="https://github.com/krakken190/Conversational-Survey-Generation-with-LLMs"
+                        target="_blank">View Project →</a>
+                </div>
+
+                <div class="project-card" onclick="openProject('https://github.com/krakken190/SqlQueryGenerator')">
+                    <img src="images/sql.JPG" alt="SQL Query Generator">
+                    <h3>SQL Query Generator using AI</h3>
+                    <p>Simplifies the SQL query writing process, even for non-technical user and demonstrates the
+                        power of AI in streamlining developer workflows.</p>
+                    <a href="https://github.com/krakken190/SqlQueryGenerator" target="_blank">View Project →</a>
+                </div>
+
+                <div class="project-card"
+                onclick="openProject('https://github.com/krakken190/AI-Loan-Underswriting-Adviser')">
+                <img src="images/Loan.JPG" alt="AI Loan Underwriting Adviser">
+                <h3>AI Loan underwriting Adviser</h3>
+                <p>This application leverages machine learning to predict loan approvals and detect potential
+                    fraud based on user input.</p>
+                <a href="https://github.com/krakken190/AI-Loan-Underswriting-Adviser    " target="_blank">View
+                    Project →</a>
+            </div>
+
+            <div class="project-card"
+            onclick="openProject('https://github.com/krakken190/CSV-File-Analyser-using-Django')">
+            <img src="images/csv.jpg" alt="CSV File Analyser using Django">
+            <h3>CSV File Analyser using Django</h3>
+            <p>CSV Analyzer is a Django-based web application that allows users to upload CSV files, perform
+                data analysis using pandas and numpy, and display the results and visualizations on a web
+                interface.</p>
+            <a href="https://github.com/krakken190/CSV-File-Analyser-using-Django" target="_blank">View
+                Project →</a>
+        </div>
+
+        <div class="project-card" onclick="openProject('https://github.com/krakken190/QA_LLM')">
+            <img src="images/RAG.png" alt="Question and Answer LLM">
+            <h3>Question and Answer LLM</h3>
+            <p>A RAG-based question-answering system using hierarchical textbook indexing and a pre-trained model for accurate
+                answers.</p>
+            <a href="https://github.com/krakken190/QA_LLM" target="_blank">View Project →</a>
+        </div>
+
+                    <div class="project-card"
+                        onclick="openProject('https://github.com/krakken190/Netflix-Movies-Analysis-using-SQL')">
+                        <img src="images/sql-server.png" alt="Netflix Movies Analysis">
+                        <h3>Netflix-Movies-Analysis-using-SQL</h3>
+                        <p>Perform a detailed analysis of movies and TV shows using the IMDb and TMDb scores, genres,
+                            actors, directors, release years, runtimes, and other attributes.</p>
+                        <a href="https://github.com/krakken190/Netflix-Movies-Analysis-using-SQL" target="_blank">View
+                            Project →</a>
+                    </div>
+
+                    <div class="project-card"
+                        onclick="openProject('https://github.com/krakken190/Retail-Analysis-Dashboard')">
+                        <img src="images/retila.JPG" alt="Retail-Analysis-Dashboard">
+                        <h3>Retail-Analysis-Dashboard</h3>
+                        <p>Created an interactive Excel dashboard that provides insights into retail shopping trends,
+                            customer behavior, and product performance, based on a dataset of 3,900 rows and 19 columns.
+                        </p>
+                        <a href="https://github.com/krakken190/Retail-Analysis-Dashboard" target="_blank">View Project
+                            →</a>
+                    </div>
+
+                    <div class="project-card"
+                        onclick="openProject('https://github.com/krakken190/Top-100-Companies-driving-green-intiatives')">
+                        <img src="images/green.png" alt="EDA using Python">
+                        <h3>EDA using Python</h3>
+                        <p>Exploring Green Trends: Insights from TOP 100 Companies</p>
+                        <a href="https://github.com/krakken190/Top-100-Companies-driving-green-intiatives"
+                            target="_blank">View Project →</a>
+                    </div>
+
+                    <div class="project-card"
+                        onclick="openProject('https://github.com/krakken190/World-Happiness-Data-2024-Emotions-Analysis-and-Life-Ladder-Prediction')">
+                        <img src="images/life laffer.jfif"
+                            alt="Emotions analysis and Life Ladder Prediction">
+                        <h3>Emotions Analysis and Life Ladder Prediction</h3>
+                        <p>Analyzed the relationships between various factors and overall happiness, exploring temporal
+                            changes, and comparing well-being metrics across different countries and years.</p>
+                        <a href="https://github.com/krakken190/World-Happiness-Data-2024-Emotions-Analysis-and-Life-Ladder-Prediction"
+                            target="_blank">View Project →</a>
+                    </div>
+
+                    <div class="project-card"
+                        onclick="openProject('https://github.com/krakken190/House_Price_Prediction')">
+                        <img src="images/house.avif" alt="House Price Prediction">
+                        <h3>House Price Prediction</h3>
+                        <p>Web application to predict house prices based on various features using a machine learning
+                            model. It's built with Flask and uses a pre-trained model for quick predictions.</p>
+                        <a href="https://github.com/krakken190/House_Price_Prediction" target="_blank">View Project
+                            →</a>
+                    </div>
+
+                </div>
+            </div>
+
+            <div id="work" class="section">
+                <div class="work-experience">
+                    <div class="timeline">
+                        <div class="experience-card">
+                            <div class="timeline-point"></div>
+                            <h3>Data Analyst</h3>
+                            <span class="experience-period">2022-2023</span>
+
+                            <h4>Trainity</h4>
+                            <p>Expertly investigated large datasets over 307511 rows of data, created impactful data visualizations, and presented ndings to stakeholders.
+                                Explored social media data of 100 users to gain insights on user engagement, and behavior where 13 users were bots.
+                                Analyzed loan data of 100514 rows to identify patterns and predict loan defaults, which included identifying the data imbalance of 69%
+                                between previous loan approval and current loan approval.
+                                </p>
+                        </div>
+
+                        <div class="experience-card">
+                            <div class="timeline-point"></div>
+                            <h3>Data Science Intern</h3>
+                            <span class="experience-period">2022-2022</span>
+
+                            <h4>Corizo</h4>
+                            <p>Performed Data manipulation using pandas and wine analysis with 6500 rows of data.
+                                Developed road lane detection GUI project using python.
+                                Build retinopathy detection model in jupyter notebook using data of around 53580 rows having different images of eyes with an accuracy of 65%
+                                which can be optimized to 79%-80%.</p>
+                        </div>
+
+                        <div class="experience-card">
+                            <div class="timeline-point"></div>
+                            <h3>Data Science Trainee</h3>
+                            <span class="experience-period">2021-2021</span>
+
+                            <h4>IEEE NITK</h4>
+                            <p>We were treated with Industrial data for EDA and visualization with 6000 rows of data.
+                                Prepared Prediction models with 75% accuracy through the raw data after cleaning the data.
+                                Worked on a weather Prediction model with over 40000 rows of data.
+                                </p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <div id="education" class="section">
+                <div class="education-section">
+
+                    <div class="timeline">
+                        <div class="education-card">
+                            <div class="timeline-point"></div>
+                            <h3>PG Diploma specialization in AI and ML</h3>
+                            <span class="education-period">2023 - 2024</span>
+
+                            <h4>NIT Warangal</h4>
+                            <p>Learned about Machine Learning, NLP, Sequence Learning, Tensorflow, and other ML Algorithms</p>
+                        </div>
+
+                        <div class="education-card">
+                            <div class="timeline-point"></div>
+                            <h3>Bachelor's in Computer Application</h3>
+                            <span class="education-period">2019 - 2022</span>
+
+                            <h4>Pune University</h4>
+                            <p>Learned about Coding Languages, Databases, Android Programming, Data Science</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <script src="script.js"></script>
+</body>
+
+</html>
